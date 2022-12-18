@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="section">
+    
+        <h1 >CSS INTERVIEW QUESTIONS DAY-2</h1>
+        <h3>what is box sizing ?</h3>
+        <p>The CSS box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+        <div>
+            <p>Example:<div class="box"></div></p>
+        </div>
+        <h3>What is animation delay</h3>
+        <p>The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation.</p>
+        
+        <h3>write a code to show any animation example ?</h3>
+        <pre>
+            code:.box1{
+                width: 100px;
+                height: 100px;
+                background-color: cadetblue;
+                animation: box1 4s linear infinite;
+                position: relative;
+            }
+            @keyframes box1{
+                from {left:0px;}
+                to {
+                    left: 150px;
+                }
+            }
+        </pre>
+        <div class="box1">
+            
+        </div>
+        <h3>what is grid- template- column used for ? </h3>
+        <p>The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. The values are a space separated list, where each value specifies the size of the respective column.
+        </p>
+        <h3>which property you will use to merge cells vertically in grid ?</h3>
+        
+    
+    <p>Use the <em>grid-column</em> property to specify on which column-line to start the item, and which column-line to end the item.</p>
+    <p>Item1 will start on column-line 1, and end on column-line 3:</p>
+    
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>  
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+    </div>
+    <h3>which property you will use to merge cells horizontally in grid</h3>
+    <p>Use the <em>grid-row</em> property to specify on which row to place an item, and how many row the item will span.</p>
+    <p>This property is a shorthand property for the grid-row-start and grid-row-end properties.</p>
+    <p>Item1 will start on row 1, and span 2 rows:</p>
+    <div class="grid-container">
+        <div class="itema">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+      </div>
+      <h3>what is difference between display none and visibility hidden ?</h3>
+      <p>the name itself we can tell the difference as display: “none”; completely gets rids of the tag, as it had never existed in the HTML page whereas visibility: “hidden”; just makes the tag invisible, it will still on the HTML page occupying space it’s just invisible.</p>
+    
+    
+</body>
+</html>
